@@ -34,12 +34,15 @@ function createCounter(lsCar) {
     var carSub = document.createElement('button');
     var cartotal = document.createElement("span");
 
-    carRow.setAttribute("id", `${lsCar.name}`)
+    carRow.setAttribute("id", `${lsCar.name}`);
+    carRow.setAttribute("class", "list-item");
 
     carAdd.innerText = "+";
+    carAdd.setAttribute('class', "btn btn-success")
     carAdd.setAttribute('onClick', "add(this.parentNode.id)");
 
     carSub.innerText = "-";
+    carSub.setAttribute('class', "btn btn-danger")
     carSub.setAttribute('onClick', "subtract(this.parentNode.id)");
 
     cartotal.setAttribute('id', `${lsCar.name}Total`);

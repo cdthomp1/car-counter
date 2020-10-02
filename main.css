@@ -1,0 +1,27 @@
+body {
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+#car-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-header{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.list-item{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
