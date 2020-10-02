@@ -67,7 +67,7 @@ async function add(id) {
     localStorage.setItem('test1', JSON.stringify(cars));
 }
 
-async `function subtract(id) {
+async function subtract(id) {
     var carTotal = document.getElementById(`${id}Total`);
     var cars = await getCars();
     var specificCar = cars.findIndex(car => car.name === id);
